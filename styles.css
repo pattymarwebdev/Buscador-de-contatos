@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-image: url("./img/background.jpg");/*Caminho da imagem de fundo*/
+    background-size: cover; /* a imagem de fundo se ajusta ao tamanho da janela do navegador*/
+    background-repeat: no-repeat;/*impede que a imagem se repita*/
+    background-attachment: fixed;/* fixa a imagem de fundo para que ela não role com o conteúdo da página.*/
+    margin-right: 50px;/*reduz o espacamento a direita pra nao ficar colado a borda da pagina*/
+   
+}
+
+/*Estilo para o conteiner principal*/
+
+.container {
+    max-width: 400px; /*reduz a largura do container*/
+    margin: 50px auto;
+    padding: 20px; /*reduz o espacamento interno*/
+    background-color: #fff; /* Cor de fundo */
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.1);
+    display: flex;/*Ativando o flex container*/
+    flex-direction: column-reverse; /*Alinhando verticalmente*/
+    justify-content: space-evenly;/*Centralizando verticamlmente*/
+    align-items: center; /* Centralizando horizontalmente*/
+    height: 400px;/*Usando 100% da altura da tela*/ /*caso coloque 100%--aqui irei ajustar em px pra diminuir a altura*/
+    box-sizing: border-box;/*Para incluir o padding no calculo da altura*/
+    margin-left: 200px;
+    margin-right: 0;
+    
+}
+
+.name {
+    
+   text-align: center;
+    font-size: 12px;
+    color: #0a0a0a;
+}
+.text2 {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+/*Estilos para o container do icone (imagem)*/
+
+img.icon {
+    display: block;
+    margin: 10px auto 0;/*Margem superior reduzida*/
+    width: 120px; /*Largura da imagem (altere conforme necessário*/
+    height: 120px;/*Altura da imagem (altere conforme necessário*/
+    
+}
+
+/* Estilos para o título do aplicativo*/
+
+.app-title {
+text-align: right;/*alinhando o titulo a direita*/
+color: #333; /*Cor das fontes*/
+margin-top: 10px;
+padding: 20px;
+}
+
+/*Estilos para a entrada de texto e botão de busca*/
+/*ajustando o input para preencher a largura disponivel*/
+input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;/*Espaçamento acima da caixa de pesquisa*/
+    margin-bottom: 30px;
+    border: 1px solid #ccc; /* Adicione a cor da borda aqui*/
+    background-color: #fff; /*Cor de fundo da caixa de pesquisa*/
+    color: #333; /*Cor da fonte da caixa de pesquisa*/
+    font-size: 16px;
+}
+/*alinhando o botao a direita*/
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 0;
+}   
+
+button:hover {
+    background-color: #0056b3;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+/* Estilos para o rodapé */
+.footer {
+    text-align: center;
+    margin-top: 5px;
+    display: flex;/*Ativando o flex container*/
+    flex-direction: column-reverse; /*Alinhando verticalmente*/
+    justify-content: space-evenly;/*Centralizando verticamlmente*/
+}
+
+
+   
+
+
+/* Estilos para os ícones de redes sociais */
+.footer a {
+    margin: 0 10px; /* Espaço horizontal entre os ícones */
+    color: #fffdfc; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    text-decoration: none; /* Remove sublinhado nos links */
+   
+}
+
+
+.footer a:hover {
+    color: #4caf50; /* Cor ao passar o mouse sobre os ícones */
+}
+
+/* Adaptações para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .logo {
+        max-width: 80%; /* Reduzindo o tamanho da logo em telas pequenas */
+    }
+}
